@@ -257,7 +257,11 @@ small, p, li {
     -webkit-box-shadow: -1px -1px 15px 0px rgba(0, 0, 0, 0.18);
     -moz-box-shadow: -1px -1px 15px 0px rgba(0, 0, 0, 0.18);
     padding: 2rem 1.75rem;
-   
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1)!important;
 }
 
 .card_iconos{
@@ -270,6 +274,7 @@ small, p, li {
     color: var(--pinkish);
     font-size: 2rem;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
 .card_iconos i.fa-github{
