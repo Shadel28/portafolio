@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a53425518.js" crossorigin="anonymous"></script>
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <header id="header" class="ph">
+        <span class="logo" data-aos="fade-down" data-aos-easing="linear"
+        data-aos-duration="800">SHADEL</span>
+            <ul class="nav_ul" data-aos="fade-down" data-aos-easing="linear"
+            data-aos-duration="800">
+                <li class="nav_item"><a href="#inicio">Inicio</a></li>
+                <li class="nav_item"><a href="#about">Sobre Mi</a></li>
+                <li class="nav_item"><a href="#proyectos">Proyectos</a></li>
+            </ul>
+            <div class="responsive_menu">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+    </header>
+    <section id="inicio" class="p">
+        <div class="inicio_texto" data-aos="fade-right" data-aos-easing="linear"
+        data-aos-duration="800">
+            <small>Mi nombre es</small>
+            <h1>Shadel Mendez</h1>
+            <h2>Desarrolladora Front-end autodidáctica</h2>
+            <a href="#"><button onclick="location.href='./Curriculum/Shadel.pdf';" class="btn-normal">Ver CV</button></a>
+        </div>
+        <div class="inicio_social">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </section>
+    <section id="about" class="p">
+        <div class="about_contenedor m">
+            <div class="about_izq" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-easing="linear"
+            data-aos-duration="800">
+                <h2>Sobre Shadel</h2>
+                <p>Soy estudiante de la carrera <b>Licenciatura en Informatica</b> en la UASD. Mi primera experiencia con el desarrollo web fue duarante mi bachillerato donde aprendí HTML. Sin embargo, no fue hasta inicios de 2022 que decidí tomar tiempo de poner en práctica lo aprendido hace años y conocer las tecnologías necesarias que todo desarrollador web debe dominar.</p>
+                <p>Me apasiona el Front-end y confío algún día mis capacidades y pasion me llevarán lejos.</p>
+                <p>Algunas de las tecnologías con las que he trabajado:</p><br>
+                <ul class="about_ul">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>React</li>
+                    <li>Figma</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+            <div class="about_der" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom" data-aos-easing="linear"
+            data-aos-duration="800">
+                <img src="./img/about.svg" alt="about">
+            </div>
+        </div>
+    </section>
+    <section id="proyectos" class="p">
+        <h2>Mis Proyectos</h2>
+        <div class="proyectos_cards m">
+            <div class="card" data-aos="zoom-in" data-aos-easing="linear"
+            data-aos-duration="400">
+                <div class="card_iconos">
+                    <i class="fa-solid fa-folder"></i>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <h3>UASD Inicio Sesión Doble</h3>
+                <p>Primer proyecto realizado con el fin de practicar lo más básico de html y css.</p>
+                <div class="card_tecnologias">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-easing="linear"
+            data-aos-duration="400">
+                <div class="card_iconos">
+                    <i class="fa-solid fa-folder"></i>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <h3>Página para pianista</h3>
+                <p>Realizado con un diseño original con el fin de profundizar más conceptos de css y la estructura de una pagina con html. Introducción a JavaScript</p>
+                <div class="card_tecnologias">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-easing="linear"
+            data-aos-duration="400">
+                <div class="card_iconos">
+                    <i class="fa-solid fa-folder"></i>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <h3>Hotel TRAVELERS</h3>
+                <p>Proyecto multipagina pensado para practicar librerías como Bootstrap, la metodoligía BEM y organizacion de carpetas para un sitio web.</p>
+                <div class="card_tecnologias">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Bootstrap</span>
+                </div>
+            </div>
+            <div class="card" data-aos="zoom-in" data-aos-easing="linear"
+            data-aos-duration="400">
+                <div class="card_iconos">
+                    <i class="fa-solid fa-folder"></i>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <h3>Sitio Web Cumpleaños</h3>
+                <p>Pequeño sitio web pensado para un negocio que ofrece organizar fiestas de cumpleaños.</p>
+                <div class="card_tecnologias">
+                    <span>HTML</span>
+                    <span>Sass</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="script.js"></script>
+</body>
+</html>

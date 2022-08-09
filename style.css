@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Lato&family=Montserrat:wght@200&family=Poppins:wght@300&family=Raleway&family=Roboto:wght@300&family=Sintony&display=swap');
+
+@font-face {
+    font-family: poppins;
+    src: url('./fonts/Poppins-Bold.otf');
+}
+
+@font-face {
+    font-family: poppins-extalt;
+    src: url('./fonts/Poppins-ExtraLight.otf');
+}
+
+:root{
+    --morado-gris: #382540;
+    --morado-oscuro: #2F1640;
+    --morado-claro: #9879D9;
+    --yelloish: #F2DC9B;
+    --pinkish:#F2DDD5;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.ph{
+    padding: 20px 80px;
+}
+
+.p{
+    padding: 100px;
+}
+
+.m{
+    margin: 40px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2{
+    font-family: poppins;
+}
+
+h1{
+    color: var(--yelloish);
+    font-size: 4.6rem;
+}
+
+small, p, li {
+    font-family: 'Sintony', sans-serif;
+}
+
+.btn-normal{
+    padding: 8px 40px;
+    background-color: transparent;
+    color: var(--yelloish);
+    border: 1px solid var(--yelloish);
+    outline: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: poppins-extalt;
+    margin-top: 15px;
+    box-shadow: inset 0 0 0 0 var(--morado-oscuro);
+    transition: ease-out 0.3s;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--morado-gris);
+}
+
+.logo{
+    font-family: poppins;
+    font-size: 1.2rem;
+    color: var(--yelloish);
+}
+
+.nav_ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.nav_ul li a{
+    font-size: 1rem;
+    font-family: poppins;
+    color: #fff;
+    transition: color 0.4s ease-in-out;
+}
+
+.nav_ul li a:hover{
+    color: var(--yelloish);
+}
+
+.responsive_menu{
+    display: none;
+}
+
+.responsive_menu i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#inicio{
+    background-color: var(--morado-gris);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+}
+
+.inicio_texto{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 18%;
+    margin-bottom: 10%;
+    width: 60%;
+    
+}
+
+.inicio_texto small{
+    font-size: 15px;
+    color: #fff;
+}
+
+.inicio_texto h2{
+    font-size: 3rem;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.btn-normal:hover{
+    box-shadow: inset 150px 0 0 0 var(--morado-oscuro);
+}
+
+.inicio_social{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    margin-right: 5%;
+    margin-top: 30%;   
+}
+
+.inicio_social a i{
+    color: #fff;
+}
+
+/*about*/
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background-color: var(--morado-gris);
+}
+
+.about_contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about_izq{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.about_izq  h2{
+    font-size: 2rem;
+    color: var(--yelloish);
+}
+
+.about_izq  p{
+    font-weight: 300;
+    margin-top: 15px;
+    width: 90%;
+    color: var(--pinkish);
+    font-size: 1rem;
+}
+
+.about_izq p b{
+    color: var(--yelloish);
+    opacity: 0.8;
+}
+
+.about_ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about_ul li{
+    margin-top: 5px;
+    color: var(--pinkish);
+}
+
+.about_ul li::before{
+    content: '\f35a';
+    margin-right: 8px;
+    font-family: FontAwesome;
+    font-size: 15px;
+    color: var(--yelloish);
+}
+
+.about_der{
+    display: flex;
+    height: 15rem;
+}
+
+/*proyectos*/
+
+#proyectos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--morado-gris);
+    min-height: 100vh;
+}
+
+#proyectos h2{
+    font-size: 2rem;
+    margin-top: 20px;
+    color: var(--yelloish);
+}
+
+.proyectos_cards{
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-gap: 60px;
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: -1px -1px 15px 0px rgba(0, 0, 0, 0.18);
+    -webkit-box-shadow: -1px -1px 15px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: -1px -1px 15px 0px rgba(0, 0, 0, 0.18);
+    padding: 2rem 1.75rem;
+   
+}
+
+.card_iconos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_iconos i{
+    color: var(--pinkish);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.card_iconos i.fa-github{
+    font-size: 1.5rem;
+}
+
+.card h3{
+    font-size: 1.3rem;
+    color: var(--yelloish);
+    font-family: poppins-extalt;
+}
+
+
+.card p{
+    font-size: 1rem;
+    margin: 15px 0;
+    color: var(--pinkish);
+}
+
+.card span{
+    text-transform: capitalize;
+    color: var(--yelloish);
+    opacity: 0.7;
+    margin-right: 15px;
+}
+
+/*MEDIAS*/
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 1250px){
+
+    .p{
+        padding: 25px;
+    }
+
+
+    .nav_ul li a {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .inicio_texto {
+        margin-left: 10%;
+        margin-bottom: 10%;
+        width: 100%;
+    }
+
+    .inicio_texto small {
+        font-size: 17px;
+    }
+
+    .inicio_social {
+        margin-right: 5%;
+        margin-top: 0;
+        bottom: 10%;
+    }
+
+    .inicio_social a i {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    .about_contenedor {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 90px;
+    }
+
+    .about_izq {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .about_izq  p {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .about_ul li {
+        margin-top: 8px;
+        font-size: 1.1rem;
+    }
+
+    .about_der {
+        display: flex;
+        height: 17rem;
+    }
+    #proyectos h2 {
+        font-size: 2.5rem;
+        margin-top: 0px;
+        margin-bottom: 10%;
+    }
+
+    .proyectos_cards {
+        grid-template-columns: repeat(2, 320px);
+        grid-gap: 40px;
+    }
+}
+
+
+/* media query for mobile devices */
+@media (max-width: 767px){
+
+    .ph {
+    padding: 20px 27px;
+}
+
+.p {
+    padding: 25px;
+}
+
+.m {
+    margin: 32px;
+}
+
+    .responsive_menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .responsive_menu i {
+        color: var(--yelloish);
+        font-size: 1.5rem;
+        z-index: 1;
+    }
+
+    .fa-bars{
+        visibility: visible;
+    }
+
+    .fa-xmark{
+        visibility: hidden;
+    }
+
+    .fa-xmark.activa{
+        z-index: 1;
+        visibility: visible;
+        color: var(--morado-gris)!important;
+    }
+
+    .nav_ul {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100px;
+        width: 50%;
+        height: 100vh;
+        background-color: var(--yelloish);
+        text-align: center;
+        z-index: 1;
+        transition: all 0.4s;
+    }
+
+    .nav_ul.activa{
+        display: flex;
+        right: 0;
+    }
+
+    .nav_ul li a {
+        color: var(--morado-gris);
+    }
+
+    .nav_ul li a:hover{
+    color: var(--morado-oscuro);
+    }
+
+    #inicio{
+    width: 100%;
+    }
+
+    .inicio_social {
+        position: fixed;
+        right: 0;
+        bottom: 5%;
+        z-index: 1;
+        margin-right: 5%;
+        margin-top: 0;   
+    }
+
+    .inicio_social a i {
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    .inicio_texto small {
+    font-size: 13px;
+    }
+
+    .inicio_texto {
+        margin-left: 8%;
+        margin-bottom: 30%;
+        width: 100%;
+    }
+
+    h1 {
+    color: var(--yelloish);
+    font-size: 2.3rem;
+}
+
+.btn-normal {
+    padding: 8px 34px;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.inicio_texto h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.about_izq {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+}
+
+.about_izq  p {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.about_der {
+    display: flex;
+    height: 10rem;
+}
+
+.about_der img{
+    width: 100%;
+}
+
+#proyectos h2 {
+   
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.proyectos_cards {
+    grid-template-columns: repeat(1, 280px);
+    grid-gap: 40px;
+}
+}
